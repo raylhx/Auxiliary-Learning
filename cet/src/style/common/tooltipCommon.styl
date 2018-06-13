@@ -1,0 +1,138 @@
+/*文本分析的样式 根据文献薄冰*/
+.clausesClass
+  display: inline
+  background-color: transparent
+  transition: all 0.5s
+  &:hover
+    background-color:#003399
+    transition: all 0.5s
+/*主语 使用红色标红*/
+MARK = #ea4335
+.subject
+  cursor: pointer
+  color:MARK
+/*谓语 波浪线*/
+MARK2 = #FFEA00
+.predicate
+  color: MARK2
+  cursor: pointer
+  position: relative
+
+.predicate::before
+  content: ''
+  position: absolute
+  bottom: -0.125em
+  width: 100%
+  height: 0.5em
+  background: linear-gradient(135deg, transparent, transparent 45%, MARK2, transparent 55%, transparent 100%),
+    linear-gradient(45deg, transparent, transparent 45%, MARK2, transparent 55%, transparent 100%)
+  background-size: 0.5em 1em
+  background-repeat: repeat-x, repeat-x
+
+MARK3 = MARK
+/* 宾语从句 下划线*/
+.object
+  cursor: pointer
+  padding-bottom: 2px
+  background-image: linear-gradient(to top, MARK3, MARK3 1px, transparent 1px)
+
+/*表语从句 虚线*/
+.predicative
+  cursor: pointer
+  padding-bottom: 2px;
+  background: linear-gradient(to right, MARK3, MARK3 4px, transparent 4px) repeat-x 0 bottom/7px 1px
+
+/*定语 */
+.attributive
+  cursor: pointer
+  color: MARK3
+/* 状语*/
+.adverbial
+  cursor: pointer
+  color: MARK3
+/*补足语 */
+.complement
+  cursor: pointer
+  color: MARK3
+
+ToolTipColor = rgba(76, 175, 80,0.8)
+/*动画效果*/
+.tooltip
+  position:relative
+
+.tooltip-content
+  cursor: pointer
+  pointer-events: none
+  position: absolute
+  width: 56px
+  height:56px
+  left:50%
+  bottom:100%
+  margin-left:-28px
+  margin-bottom: 10px
+  padding-top: 10px
+  text-align: center
+  color: #fff
+  font-size:12px
+  background-color:ToolTipColor
+  border-radius: 50%
+  opacity: 0
+
+.tooltip-content::after
+  display: block
+  content:''
+  position: absolute
+  left: 50%
+  top: 100%
+  width: 20px
+  height: 15px
+  margin:-5px 0 0 -10px
+  background: url(../../assets/common/tooltip_icon.svg) no-repeat center center
+  background-size: 100%
+/*主语*/
+.tooltip-effect-1
+  .tooltip-content
+    transform: translate3d(0,10px,0) rotate3d(1,.6,.7,45deg)
+    transform-origin: 50% 100%
+    transition: opacity 0.4s,transform 0.4s
+/*谓语*/
+.tooltip-effect-2
+  .tooltip-content
+    transform: translate3d(0,20px,0)
+    transition: opacity 0.4s, transform 0.4s
+/*定语*/
+.tooltip-effect-3
+  .tooltip-content
+    transform:translate3d(0,20px,0) rotate3d(0,1,0,90deg);
+    transform-orgin: 50% 100%
+    transition: opacity 0.4s,transform 0.4s
+
+/*宾语*/
+.tooltip-effect-4
+  .tooltip-content
+    transform:translate3d(0,-20px,0);
+    transition: opacity 0.4s,transform 0.4s
+/*表语*/
+.tooltip-effect-5
+  .tooltip-content
+    transform: scale3d(0,0,1)
+    transfrom-origin: 50% 100%
+    transition: opacity 0.4s,transform 0.4s
+/*状语*/
+.tooltip-effect-6
+  .tooltip-content
+    transform:translate3d(0,20px,0) rotate3d(0,0,1,90deg);
+    transform-origin: 50% 100%
+    transition: opacity 0.4s,transform 0.4s
+/*补足语*/
+.tooltip-effect-6
+  .tooltip-content
+    transform:translate3d(0,20px,0) rotate3d(1,0,0,90deg);
+    transform-origin: 50% 100%
+    transition: opacity 0.4s,transform 0.4s
+
+.tooltip:hover
+  .tooltip-content
+    opacity: 1
+    pointer-events: auto
+    transform: translate3d(0,0,0) scale3d(1,1,1)

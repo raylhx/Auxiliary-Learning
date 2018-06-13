@@ -1,0 +1,94 @@
+@import "../../style/variable.styl";
+label.title
+  flex: 0 0 200px
+  width: 200px
+  margin-bottom:20px
+  font-size:16px
+  color: DetailTextColor
+.text
+  flex-shrink:1
+  flex-grow: 1
+  display:block
+  width: 500px
+.editItem
+  display:none
+.showClass
+  display: block
+.hideClass
+  display: none
+
+
+#field
+  flex-grow: 1
+  max-width: 900px
+  padding:20px
+  position: relative
+  overflow: hidden
+  border-radius:5px
+  box-shadow: 0 2px 5px 0.5px rgba(0,0,0,.15);
+  background-color: #ffffff
+  .fieldContainer
+    .wrapper
+      display:flex
+      flex: wrap
+      margin-bottom:20px
+      vertical-align:top
+    .level
+      height: 300px
+      .levelContent
+        .time
+          font-size: 13px
+          color: #999
+        .bottom
+          margin-top: 13px
+          line-height: 12px
+        .button
+          padding: 0
+          float: right
+        .image
+          width: 100%
+          display: block
+        .clearfix:before,.clearfix:after
+          display: table
+          content: ""
+        .clearfix:after
+          clear: both
+    .favourite
+      margin-top: 40px
+      .favContent
+        .el-tag
+          margin:0 10px 10px 0
+    .levelHeight
+      height: 60px
+      .el-tag + .el-tag {
+        margin-left: 10px;
+      }
+      .button-new-tag {
+        margin-left: 10px;
+        height: 32px;
+        line-height: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .input-new-tag {
+        width: 90px;
+        margin-left: 10px;
+        vertical-align: bottom;
+      }
+  .iconClass
+    position: absolute
+    top:10px
+    right:30px
+    padding: 5px
+    a
+      width:100%
+      height:100%
+      i
+        font-size:30px
+        color:BLUECOLOR
+  .editWrapper
+    width:40px
+    height:40px
+  .saveWrapper
+    width:90px
+    height:40px

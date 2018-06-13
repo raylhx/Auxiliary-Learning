@@ -1,0 +1,107 @@
+@import "../../style/variable.styl";
+label.title
+  flex: 0 0 200px
+  width: 200px
+  margin-bottom:20px
+  font-size:16px
+  color: DetailTextColor
+.text
+  flex-shrink:1
+  flex-grow: 1
+  display:block
+  width: 500px
+.editItem
+  display:none
+
+.showClass
+  display: block
+.hideClass
+  display: none
+
+.errorShowClass
+  display: inline-block
+  color: red
+.errorTextClass
+  margin:0 10px
+  font-size: 14px
+  color: red
+
+#info
+  flex-grow: 1
+  max-width: 900px
+  padding:20px
+  position: relative
+  overflow: hidden
+  border-radius:5px
+  box-shadow: 0 2px 5px 0.5px rgba(0,0,0,.15);
+  background-color: #ffffff
+  .infoContainer
+    .wrapper
+      display:flex
+      flex: wrap
+      height:45px
+      margin-left: 30px
+      margin-bottom:20px
+      vertical-align:top
+      .infoItem
+        width: 40%
+        height:30px
+        margin-right: 10px
+        padding-left: 10px
+        border-top:none
+        border-left:none
+        border-right:none
+        border-bottom: 1px solid InputLineColor
+        font-size: 16px
+        color: FontColor
+        //background-color:hsla(0,0%,71%,.1)
+        &:focus
+          border-bottom: 1px solid BLUECOLOR
+    .motto
+      textarea
+        width:50%
+        height: 60px
+        padding: 5px
+        //overflow:scroll
+        border:1px solid InputLineColor
+        border-radius: 5px
+        resize: none
+        font-size:16px
+    .avatar
+      height: 110px
+      .title
+        padding: 40px 0
+      .avatar-img
+        width: 100px
+        height: 100px
+        img
+          width: 100%
+          height:100%
+          border-radius: 50%
+
+
+      .avatar-edit
+        display: none
+        opacity: 0
+  .iconClass
+    position: absolute
+    top:10px
+    right:30px
+    padding: 5px
+    a
+      width:100%
+      height:100%
+      i
+        font-size:30px
+        color:#969696
+        &:hover
+          color:BLUECOLOR
+  .editWrapper
+    width:40px
+    height:40px
+  .saveWrapper
+    width:90px
+    height:40px
+
+
+

@@ -1,0 +1,111 @@
+@import "../../style/variable.styl";
+select::-ms-expand
+  display: none
+
+.leftNav-content
+  position: fixed
+  top: 0
+  left: 0
+  width: 55px
+  height: 100%
+  overflow: hidden
+  box-shadow:-1px 0 10px rgba(0,0,0,.2) inset
+  transition: all .4s
+  background-color:#f9f9f9
+  z-index: 10
+  .left-logo
+    width: 100%
+    height: 60px
+    padding: 10px 0 10px 10px
+    background-color:BLUECOLOR
+    .logo
+      display:inline-block
+      width: 40px
+      height: 35px
+      img
+        width: 40px
+        transition:width .4s
+    .motto-wrapper
+      width:92px
+      height: 42px
+      float:right
+      margin-right: 10px
+      .motto
+        display:inline-block
+        color: #ffffff
+        font-family:PingFangSC-Light
+  .left-menu-wrapper
+    padding: 25px 0 0 14px
+    .left-menu
+      p
+        margin-top: 9px
+        height: 33px
+        line-height: 40px
+        font-size: 14px
+        font-weight:500
+        color:#999
+      .select-wrapper
+        padding-right: 20px
+      .listitem
+        height: 42px
+        transition: height .4s
+        a
+          position: relative
+          display: block
+          /*font-size: 13px*/
+          line-height: 40px
+          color: #666666
+          text-decoration: none
+          i
+            margin-right:13px
+            vertical-align:middle
+            color: BLUECOLOR
+            font-size: 16px
+
+.leftNav-content:hover
+  width: 180px
+  transition: all .4s
+  .left-logo
+    img
+      width: 54px
+      transition:width .4s
+  .motto-wrapper
+    display: block
+    opacity:1
+    transition: all .4s
+  .left-menu-wrapper
+    .left-menu
+      p
+        display: block
+        opacity:1
+        transition: all .4s
+      .select-wrapper
+        display: block
+        opacity:1
+        transition: all .4s
+        .select
+          appearance:none
+          width: 150px
+          height: 30px
+          padding: 3px 40px
+          border:1px solid BLUECOLOR
+          border-radius: 10px
+          font-size: 18px
+          text-align:center
+          color:DetailTextColor
+          option
+            border: 1px solid DetailTextColor
+      .listitem
+        height: 30px
+        transition: height .4s
+        a
+          text-decoration: none
+          span
+            display: inline-block
+            opacity:1
+            transition: width .4s
+
+.onlyOn
+  display: none
+  opacity:0
+  transition: all .4s

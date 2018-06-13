@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1075px) {
+	.contianer .main-wrapper .list-wrapper .note-list li.list {
+		height: 180px;
+	}
+	.contianer .main-wrapper .list-wrapper .note-list li.list {
+
+	}
+	.container .main-wrapper .list-wrapper .note-list li.list .content a.avatar{
+		flex: 0 0 200px;
+	}
+	.container .main-wrapper .list-wrapper .note-list li.list .content a.avatar img{
+		width: 200px;
+		height: 120px;
+		border-radius: 3px
+	}
+	.container .main-wrapper .list-wrapper .note-list li.list .content .abstract-wrapper{
+		min-width: 355px
+	}
+	.container .main-wrapper .list-wrapper .note-list li.list .content .abstract-wrapper .abstract{
+		height: 100px
+	}
+}

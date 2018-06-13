@@ -1,0 +1,94 @@
+@import "../variable.styl";
+#index
+  .header-wrapper
+    background-color:#409eff
+.el-main
+  /*样式污染，需要修改名称*/
+  .text-index-wrapper
+    position:relative
+    width: 960px
+    height:450px
+    margin:40px auto
+    border-radius: 5px
+    background-color:#fff
+    .src-box,.res-box
+      display: inline-block
+      float: left
+      border-radius:10px
+    .src-box
+      width:50%
+      height: 300px
+      padding: 30px
+      textarea
+        width:100%
+        height: 200px
+        resize:none
+        outline:0
+        overflow:hidden
+        font-size:22px
+      .textnumber-tooltip
+        color: DetailTextColor
+      .analysis-btn
+        //float:right
+        width: 150px
+        height: 30px
+        border:none
+        border-radius: 4px
+        font-size: 18px
+        color: #ffffff
+        background-color:BLUECOLOR
+    .res-box
+      width:50%
+      height:300px
+      padding: 20px
+      .out-wrapper
+        .item
+          display:flex
+          width: 100%
+          min-height: 30px
+          margin-bottom: 15px
+          color:#585858
+          i
+            cursor:pointer
+            width: 30px
+            height:30px
+            font-size:30px
+            color:#4ea1d3
+          .title
+            cursor:pointer
+            margin-left:6px
+            width: 36px
+            height:30px
+            line-height:30px
+            font-size: 18px
+            color:#4ea1d3
+          div
+            display:inline-block
+            width: 352px
+            margin-left:6px
+            margin-top:3px
+            font-size:18px
+            word-wrap: break-word
+        .s-origin
+          .origin-text
+            height: 160px
+            overflow : hidden
+        .s-analysis
+          .analysis
+            word-wrap: break-word
+            display: block
+    .analyze-box
+      position: absolute
+      top: 300px
+      left:0
+      width: 960px
+      height: 150px
+      clear:all
+      padding: 10px 30px
+      .icon_quill
+        font-size: 30px
+        color: BLUECOLOR
+      .analysis
+        font-size: 18px
+        line-height: 36px
+        color:#585858

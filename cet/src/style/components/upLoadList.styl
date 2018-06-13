@@ -1,0 +1,60 @@
+@import "../../style/variable.styl";
+#upLoadList
+  flex-grow: 1
+  max-width: 900px
+  min-width: 670px
+  padding:20px
+  position: relative
+  overflow: hidden
+  border-radius:5px
+  box-shadow: 0 2px 5px 0.5px rgba(0,0,0,.15);
+  background-color: #ffffff
+  .container-wrapper
+    font-size: 16px
+    .note-list
+      list-style :none
+      li.list
+        padding: 5px
+        border-bottom: 1px solid #eeeeee
+        max-height: 550px
+        .title
+          color: #000
+          text-decoration: none
+          &:hover
+            color: BLUECOLOR
+            text-decoration:underline
+          p
+            width: 100%
+            padding-bottom: 8px
+            font-family:PingFangSC-Medium
+            font-weight: 500
+            line-height:2
+        .content
+          display:flex
+          a.avatar
+            flex:0 0 180px
+            display: inline-block
+            margin-right:10px
+            img
+              width: 180px
+              height: 100px
+          .abstract-wrapper
+            cursor:pointer
+            min-width: 380px
+            .abstract
+              height: 80px
+              p
+                overflow :hidden
+                font-size :16px
+                font-family :HelveticaNeue-Light
+                font-weight:300
+                line-height:1.43
+            .meta
+              font-size: 12px
+              span
+                padding-right: 20px
+                color: #999999
+                i
+                  padding-left: 10px
+                  font-style: normal
+                  color:#535353
